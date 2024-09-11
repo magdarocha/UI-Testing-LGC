@@ -31,5 +31,6 @@ allure generate results_test -o results_html --clean
 ```
 
 After run this steps, go to the __results_html__ folder, and with the right button in __index.html__ click in ```open with live server```.
+This require a VSCode Plugin called ```Live Server (ritwickdey.liveserver)```.
 
 
