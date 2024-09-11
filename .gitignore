@@ -1,0 +1,4 @@
+results_html/*
+results_test/*
+__pycache__
+.pytest_cache
