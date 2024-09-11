@@ -70,8 +70,10 @@ def test_full_test():
 
         # 9. Verify that the item is removed from the list
 
-        number_of_elements = page.locator('xpath=//*[@id="root"]/footer/span').text_content()
-        assert number_of_elements == '1 item left!', 'Wrong number of items'
+        to_do_list = page.locator('xpath=//*[@id="root"]/main/ul/li').all()
+        count_to_do = len(to_do_list)
+        print('Number of to do elements in the list is',count_to_do)
+        assert count_to_do == 1, 'Wrong number of items'
 
         time.sleep(1)
 
